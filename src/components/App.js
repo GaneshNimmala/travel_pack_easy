@@ -15,9 +15,11 @@ export default function App() {
   function handleAddItems(item) {
     setItem((items) => [...items, item]);
   }
+
   function handleDeleteItems(id) {
     setItem((items) => items.filter((element) => element.id !== id));
   }
+
   function handleChecked(id) {
     setItem((items) =>
       items.map((element) =>
